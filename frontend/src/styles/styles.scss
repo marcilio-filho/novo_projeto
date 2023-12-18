@@ -1,0 +1,29 @@
+$primary-color: #9e6a37;
+$secondary-color: #c39367;
+$primary-gray: #25282a;
+$secondary-gray: #545859;
+$tertiary-gray: #d7d2cb;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond', sans-serif;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+
+.highlight-yellow { background-color: rgba(255, 255, 0, 0.3); }
+.highlight-green { background-color: rgba(0, 128, 0, 0.3); }
+.highlight-red { background-color: rgba(255, 0, 0, 0.3); }
+.highlight-blue { background-color: rgba(0, 0, 255, 0.3); }
+.underline { text-decoration: underline; }
+.bold { font-weight: bold; }
