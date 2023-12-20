@@ -1,7 +1,8 @@
 // src/pages/LoginPage.jsx
 import React from 'react';
-import LoginForm from '../forms/LoginForm';
+import LoginForm from '../components/forms/LoginForm';
 import Logo from '../assets/images/logo_1.png';
+import icons from '../components/Icons';
 
 function LoginPage() {
     async function handleLogin(email, password) {
@@ -32,6 +33,7 @@ function LoginPage() {
         <>
             <div className="flex min-h-full h-screen flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+                {icons.home}
                     <img
                         className="mx-auto h-12 w-auto"
                         src= {Logo}

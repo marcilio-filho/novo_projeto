@@ -1,5 +1,5 @@
 import React from 'react';
-import ArticleComponent from '../components/ArticleComponent';
+import ArticleComponent from '../components/organisms/ArticleComponent';
 
 const EbookPage = () => {
     return (

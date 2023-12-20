@@ -8,22 +8,43 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: 'EB Garamond', sans-serif;
 }
 
-h3 {
-  font-size: 1.3rem;
+h2 {
+  font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+h5{
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+	}
+h6 {
+  font-size: 1.35rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+}
+
 p {
   margin-bottom: 1rem;
 }
 
-.highlight-yellow { background-color: rgba(255, 255, 0, 0.3); }
-.highlight-green { background-color: rgba(0, 128, 0, 0.3); }
-.highlight-red { background-color: rgba(255, 0, 0, 0.3); }
-.highlight-blue { background-color: rgba(0, 0, 255, 0.3); }
-.underline { text-decoration: underline; }
+.highlight-yellow { background-color: rgba(255, 255, 0, 0.2); }
+.highlight-green { background-color: rgba(0, 128, 0, 0.2); }
+.highlight-red { background-color: rgba(255, 0, 0, 0.2); }
+.highlight-blue { background-color: rgba(0, 0, 255, 0.2); }
+.underline { border-bottom: 1px solid $primary-color; text-decoration-line: none;}
 .bold { font-weight: bold; }
+
+
+.duotone-icon {
+  --fa-primary-color: #9e6a37;
+  --fa-secondary-color: #c39367;
+}
