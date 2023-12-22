@@ -15,6 +15,8 @@
 */
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../styles/styles.scss';
+
 
 //FREE SOLID
 import { 
@@ -29,7 +31,7 @@ import {
 
 //DUOTONE
 import {
-  faHome,
+  
   
 } from '@fortawesome/pro-duotone-svg-icons';
 
@@ -41,7 +43,7 @@ import {
 
 //PRO LIGHT
 import {
-  
+  faHome,
 } from '@fortawesome/pro-light-svg-icons';
 
 //SHARP SOLID
@@ -79,6 +81,8 @@ import {
   faParagraph,
   faFeather as faFeatherL,
   faCardsBlank,
+  faLockOpen,
+  faLock,
 
 } from '@fortawesome/sharp-light-svg-icons';
 
@@ -95,7 +99,6 @@ import {
   faXTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 
-import '../styles/styles.scss';
 
 const icons = {
   home: <FontAwesomeIcon icon={faHome} className="duotone-icon" />,
@@ -132,6 +135,12 @@ const icons = {
   twitter: <FontAwesomeIcon icon={faXTwitter} />,
   whatsapp: <FontAwesomeIcon icon={faWhatsapp} />,
   cards: <FontAwesomeIcon icon={faCardsBlank} />,
+  cadeadoAberto: <FontAwesomeIcon icon={faLockOpen} />,
+  cadeadoFechado: <FontAwesomeIcon icon={faLock} />,
 };
 
-export default icons;
+const iconsKeys = {
+  home: 'fa-regular fa-house',
+};
+
+export default { icons, iconsKeys };

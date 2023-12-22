@@ -1,15 +1,15 @@
-// App.js or another component
+// Example in App.js
+
 import React from 'react';
-import QuillInput from '../components/organisms/QuillComponent'; // Adjust the path as necessary
-
-function QuillPag() {
+import FroalaEditorComponent from '../components/organisms/FroalaComponent';
+import QuillComponent from '../components/organisms/QuillComponent';
+//<FroalaEditorComponent style="display: none"/>
+function App() {
   return (
-    <div className="lg:max-w-2xl md:max-w-2xl">
-        <div className="QuillInput">
-            <QuillInput />
-        </div>
+    <div className="App">
+      <QuillComponent /> 
     </div>
-
   );
 }
-export default QuillPag;
+
+export default App;

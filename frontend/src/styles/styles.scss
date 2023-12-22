@@ -3,48 +3,190 @@ $secondary-color: #c39367;
 $primary-gray: #25282a;
 $secondary-gray: #545859;
 $tertiary-gray: #d7d2cb;
+$serif: 'Cormorant Garamond', serif;
+$sans: 'Montserrat', sans-serif;
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $sans;
   font-size: 1rem;
 }
-h1, h2, h3, h4, h5 {
-  font-family: 'EB Garamond', sans-serif;
+h1, h2, h3, h5, h6 {
+  font-family: $serif;
 }
 
-h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-h5{
+h4 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  font-family: $sans;
+  }
+
+h6{
+  font-size: 1.25rem;
+  margin-bottom: 0rem;
+  font-weight: 500;
 	}
-h6 {
-  font-size: 1.35rem;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 1rem;
-}
 
 p {
   margin-bottom: 1rem;
 }
 
+
 .highlight-yellow { background-color: rgba(255, 255, 0, 0.2); }
 .highlight-green { background-color: rgba(0, 128, 0, 0.2); }
 .highlight-red { background-color: rgba(255, 0, 0, 0.2); }
 .highlight-blue { background-color: rgba(0, 0, 255, 0.2); }
-.underline { border-bottom: 1px solid $primary-color; text-decoration-line: none;}
+.underline { border-bottom: 1px solid $secondary-color; text-decoration-line: none;}
 .bold { font-weight: bold; }
 
 
 .duotone-icon {
   --fa-primary-color: #9e6a37;
   --fa-secondary-color: #c39367;
+}
+
+//QUILL
+.quill.cabecalho {
+  user-select: none;
+}
+.quill {
+  
+.ql-editor {
+  padding: 0;
+}
+.ql-formats .ql-custom-button i:hover,
+.ql-formats .ql-custom-button i:focus,
+.ql-formats .ql-custom-button i:active
+{
+  color: #fff !important;
+}
+
+.ql-bubble .ql-tooltip.ql-editing .ql-tooltip-editor {
+  display: flex !important;
+}
+
+span.ql-picker-item.ql-primary {
+  width: 40px !important;
+}
+
+.ql-bubble .ql-color-picker .ql-picker-options {
+  width: auto !important;
+}
+
+h1, h2, h3, h5, h6 {
+  font-weight: 700;
+  font-size: 0.80rem;
+  color: $primary-color;
+  margin-bottom: 1.3em !important;
+}
+
+h4 {
+  font-family: $serif;
+  font-weight: 600 !important;
+  margin: 1.6em 0 1em !important;
+  font-size: 1.7rem;
+}
+
+p {
+  font-family: $serif;
+  margin-bottom: 1rem !important;
+  font-size: 1.25em;
+  line-height: 1.45;
+}
+
+blockquote {
+  border-left: solid 4px $primary-color !important;
+  margin: 1em 0 !important;
+  padding-left: 10px !important;
+  color: $primary-color;
+  font-style: italic ;
+  font-size: 1.25em
+}
+
+span[data-value = "#ffff0040"]:not(.ql-picker-label) {
+  background-color: yellow !important;
+}
+span[data-value = "#00800033"]:not(.ql-picker-label) {
+  background-color: green !important;
+}
+span[data-value = "#ff000033"]:not(.ql-picker-label) {
+  background-color: red !important;
+}
+span[data-value = "#0000ff33"]:not(.ql-picker-label) {
+  background-color: blue !important;
+}
+span[data-value = "#ffa50033"]:not(.ql-picker-label) {
+  background-color: orange !important;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//FROALA
+.fr-element.fr-view u {
+  text-decoration-color: $secondary-color !important;
+}
+.fr-command.fr-select-color {
+  /* Apply the default style */
+  display: none !important;
+}
+
+/* Select elements with specific background colors */
+.fr-command.fr-select-color[style*='#61BD6D'],
+.fr-command.fr-select-color[style*='#F37934'],
+.fr-command.fr-select-color[style*='#E25041'],
+.fr-command.fr-select-color[style*='#F7DA64'],
+.fr-command.fr-select-color[style*='#EB6B56'],
+.fr-command.fr-select-color[style*='#54ACD2'] {
+  /* Override the default style for elements with the specified backgrounds */
+  display: flex !important;
+}
+
+.fr-color-set.fr-background-color.fr-selected-set {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.fr-view blockquote {
+  border-left: solid 4px $primary-color !important;
+  margin-left: 0;
+  padding-left: 10px !important;
+  color: $primary-color !important;
+  font-style: italic !important;
+  font-size-adjust: none !important;
 }

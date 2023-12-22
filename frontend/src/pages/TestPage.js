@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import icons from '../components/Icons';
+import Icons from '../components/Icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+const icons = Icons.icons;
 const NomeUsuario = "Manf McLoving";
 const FotoUsuario = "https://www.criatives.com.br/wp-content/uploads/2018/12/homem-bonito-03.jpg";
 const Artigos = [

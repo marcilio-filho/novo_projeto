@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "nome": "John Doe",
+        "foto": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2148071346/settings_images/INMJFcDjTGCBAVeQZGp2_file.jpg"
+    },
+    {
+        "id": 2,   
+        "nome": "Jane Doe",
+        "foto": "https://i1.rgstatic.net/ii/profile.image/877457527799810-1586213585875_Q512/Marcilio-Fagundes-2.jpg"
+    }
+]

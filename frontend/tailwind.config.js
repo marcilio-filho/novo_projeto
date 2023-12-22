@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
         heading: ['Raleway', 'sans-serif'],
+        serif: ['Cormorant Garamond', 'serif'],
       },
     }, // Remove the extra semicolon here
   },
