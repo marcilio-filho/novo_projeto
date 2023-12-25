@@ -4,7 +4,7 @@ import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import EbookPage from './pages/EbookPage';
 import ArticleComponent from './components/organisms/ArticleComponent';
-import TestPage from './pages/TestPage';
+import Playground from './pages/Playground';
 import QuillPage from './pages/QuillPage';
 import './App.css';
 import './styles/styles.scss';
@@ -17,7 +17,7 @@ function App() {
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/ebook" element={<EbookPage />} />
         <Route path="/article" element={<ArticleComponent />} />
-        <Route path="/test" element={<TestPage />} />
+        <Route path="/playground" element={<Playground />} />
         <Route path="/quill" element={<QuillPage />} />
         {/* other routes */}
       </Routes>

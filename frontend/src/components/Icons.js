@@ -1,7 +1,8 @@
 /*
+@fortawesome/react-fontawesome
 @fortawesome/fontawesome-svg-core
 @fortawesome/free-solid-svg-icons
-@fortawesome/react-fontawesome
+@fortawesome/free-brands-svg-icons
 @fortawesome/pro-regular-svg-icons 
 @fortawesome/pro-light-svg-icons
 @fortawesome/pro-duotone-svg-icons
@@ -11,7 +12,7 @@
 @fortawesome/sharp-regular-svg-icons
 @fortawesome/sharp-light-svg-icons
 @fortawesome/sharp-thin-svg-icons
-@fortawesome/free-brands-svg-icons
+
 */
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,14 +32,14 @@ import {
 
 //DUOTONE
 import {
-  
+  faMicrochipAi,
   
 } from '@fortawesome/pro-duotone-svg-icons';
 
 //PRO SOLID
 import {
+
   faUnderline,
-  faEllipsisH,
 } from '@fortawesome/pro-solid-svg-icons';
 
 //PRO LIGHT
@@ -48,6 +49,9 @@ import {
 
 //SHARP SOLID
 import {
+  faThumbsUp as faThumbsUpSolid,
+  faThumbsDown as faThumbsDownSolid,
+  faBookmark as faBookMarkSolid,
 
 } from '@fortawesome/sharp-solid-svg-icons';
 
@@ -58,15 +62,10 @@ import {
   faPencil,
   faNotebook,
   faPenLine,
-  faMicrophoneLines,  
   faSealQuestion,
   faTags,
   faFeather,
   faBook,
-} from '@fortawesome/sharp-regular-svg-icons';
-
-//SHARP LIGHT
-import {
   faThumbsUp,
   faMessage,
   faBookmark,
@@ -83,6 +82,21 @@ import {
   faCardsBlank,
   faLockOpen,
   faLock,
+  faPrint,
+  faGraduationCap,
+  faFilePdf,
+  faEllipsis,
+  faWaveformLines,
+  faThumbsDown,
+  faMessageQuestion,
+  faRotateReverse,
+  faGearComplex,
+
+} from '@fortawesome/sharp-regular-svg-icons';
+
+//SHARP LIGHT
+import {
+  
 
 } from '@fortawesome/sharp-light-svg-icons';
 
@@ -93,21 +107,30 @@ import {
 } from '@fortawesome/sharp-thin-svg-icons';
 
 
-//
+//BRANDS
 import {
-  faWhatsapp,
+  faFacebook,
   faXTwitter,
+  faWhatsapp,
+  faThreads,
+
 } from '@fortawesome/free-brands-svg-icons'
 
 
 const icons = {
   home: <FontAwesomeIcon icon={faHome} className="duotone-icon" />,
-  elipse: <FontAwesomeIcon icon={faEllipsisH} style={{ "color": "black" }} />,
+  //elipse: <FontAwesomeIcon icon={faEllipsisH} style={{ "color": "black" }} />,
+  elipse: <FontAwesomeIcon icon={faEllipsis} />,
+  reset: <FontAwesomeIcon icon={faRotateReverse} />,
   play: <FontAwesomeIcon icon={faPlay} />,
   compartilhar: <FontAwesomeIcon icon={faShareFromSquare} />,
   comentar: <FontAwesomeIcon icon={faMessage} />,
   salvar: <FontAwesomeIcon icon={faBookmark} />,
+  salvarsolido: <FontAwesomeIcon icon={faBookMarkSolid} />,
   curtir: <FontAwesomeIcon icon={faThumbsUp} />,
+  curtirsolido: <FontAwesomeIcon icon={faThumbsUpSolid} />,
+  descurtir: <FontAwesomeIcon icon={faThumbsDown} />,
+  descurtirsolido: <FontAwesomeIcon icon={faThumbsDownSolid} />,
   sublinhar: <FontAwesomeIcon icon={faUnderline} />,
   negrito: <FontAwesomeIcon icon={faN} />,
   destacar: <FontAwesomeIcon icon={faHighlighter} className="duotone-icon" />,
@@ -117,6 +140,7 @@ const icons = {
   lapis: <FontAwesomeIcon icon={faPencil} />,
   quadrado: <FontAwesomeIcon icon={faSquare} />,
   ouvir: <FontAwesomeIcon icon={faHeadphones} />,
+  ondas: <FontAwesomeIcon icon={faWaveformLines} />,
   lista: <FontAwesomeIcon icon={faList} />,
   limpar: <FontAwesomeIcon icon={faBroomWide} />,
   traduzir: <FontAwesomeIcon icon={faLanguage} />,
@@ -126,6 +150,7 @@ const icons = {
   teste: <FontAwesomeIcon icon={faBallotCheck} />,
   interrogacao: <FontAwesomeIcon icon={faSealQuestion} />,
   pergunta: <FontAwesomeIcon icon={faMessagesQuestion} />,
+  duvida: <FontAwesomeIcon icon={faMessageQuestion} />,
   info: <FontAwesomeIcon icon={faMemoCircleInfo} />,
   tag: <FontAwesomeIcon icon={faTags} />,
   feather: <FontAwesomeIcon icon={faFeather} />,
@@ -133,14 +158,23 @@ const icons = {
   livroaberto: <FontAwesomeIcon icon={faBook} />,
   paragrafo: <FontAwesomeIcon icon={faParagraph} />,
   twitter: <FontAwesomeIcon icon={faXTwitter} />,
+  threads: <FontAwesomeIcon icon={faThreads} />,
+  facebook: <FontAwesomeIcon icon={faFacebook} />,
   whatsapp: <FontAwesomeIcon icon={faWhatsapp} />,
   cards: <FontAwesomeIcon icon={faCardsBlank} />,
   cadeadoAberto: <FontAwesomeIcon icon={faLockOpen} />,
   cadeadoFechado: <FontAwesomeIcon icon={faLock} />,
+  imprimir: <FontAwesomeIcon icon={faPrint} />,
+  chip: <FontAwesomeIcon icon={faMicrochipAi} />,
+  chapeu: <FontAwesomeIcon icon={faGraduationCap} />,
+  pdf: <FontAwesomeIcon icon={faFilePdf} />,
+  settings: <FontAwesomeIcon icon={faGearComplex} />,
 };
 
 const iconsKeys = {
   home: 'fa-regular fa-house',
+  chip: 'fa-duotone fa-microchip-ai',
+  typewriter: 'fa-duotone fa-typewriter',
 };
 
 export default { icons, iconsKeys };

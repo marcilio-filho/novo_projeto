@@ -13,11 +13,21 @@ module.exports = {
         'tertiary-gray': '#d7d2cb',
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
         heading: ['Raleway', 'sans-serif'],
         serif: ['Cormorant Garamond', 'serif'],
       },
-    }, // Remove the extra semicolon here
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        'fade-in': 'fadeIn 1s ease-out',
+        'fade-out': 'fadeOut 1s ease-out'
+      },
+    }, 
   },
   plugins: [],
 }
