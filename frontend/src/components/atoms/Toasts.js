@@ -25,7 +25,7 @@ const Toast = ({ text, type }) => {
     const typestyle = cores[type];
 
     return (
-        <div className={`fixed flex items-center bottom-5 border-l-4 right-5 py-2 px-4 rounded shadow-lg animate-fade-in ${typestyle} ${isDisappearing ? 'animate-fadeOut' : ''}`}>
+        <div className={`fixed flex items-center bottom-5 border-l-4 right-5 py-2 px-4 rounded shadow-lg animate-fade-in ${typestyle} ${isDisappearing ? 'animate-fade-out' : ''}`}>
             {text}
         </div>
     );

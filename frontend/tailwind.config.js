@@ -3,6 +3,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // Update this line
     // Add any other paths that may use Tailwind CSS classes
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -11,9 +12,11 @@ module.exports = {
         'primary-gray': '#25282a',
         'secondary-gray': '#545859',
         'tertiary-gray': '#d7d2cb',
+        'light-gray': '#f5f5f5',
+        'ubique-blue': '#161fff',
       },
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
+        sans: ['Noto Sans', 'sans-serif'],
         heading: ['Raleway', 'sans-serif'],
         serif: ['Cormorant Garamond', 'serif'],
       },
@@ -21,6 +24,10 @@ module.exports = {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
         },
       },
       animation: {

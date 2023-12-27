@@ -39,7 +39,7 @@ import {
 //PRO SOLID
 import {
 
-  faUnderline,
+  faUnderline, 
 } from '@fortawesome/pro-solid-svg-icons';
 
 //PRO LIGHT
@@ -91,6 +91,8 @@ import {
   faMessageQuestion,
   faRotateReverse,
   faGearComplex,
+  faXmarkLarge,
+  faSunBright as faSun, faMoon,
 
 } from '@fortawesome/sharp-regular-svg-icons';
 
@@ -169,6 +171,9 @@ const icons = {
   chapeu: <FontAwesomeIcon icon={faGraduationCap} />,
   pdf: <FontAwesomeIcon icon={faFilePdf} />,
   settings: <FontAwesomeIcon icon={faGearComplex} />,
+  close: <FontAwesomeIcon icon={faXmarkLarge} />,
+  sol: <FontAwesomeIcon icon={faSun} />,
+  lua: <FontAwesomeIcon icon={faMoon} />,
 };
 
 const iconsKeys = {
